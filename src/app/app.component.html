@@ -1,0 +1,7 @@
+<div style="margin: 10px">
+  <input type="text" [(ngModel)]="newTask" />
+  <button style="margin-left:10px" (click)="addTask(newTask)">Add Task</button>
+</div>
+<ul>
+  <li *ngFor="let item of arrayList; let i = index">{{ item }} <button (click)="deleteItem(i)">delete </button></li>
+</ul>
